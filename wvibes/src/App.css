@@ -10,6 +10,13 @@ body{
   border-style: groove;
   max-width: 600px;
 }
+.postII{
+  align-items: center;
+  border-color:goldenrod;
+  border-style:ridge;
+  max-width: 600px;
+  color:darkblue
+}
 
 .vibes{
   display: grid;
@@ -26,11 +33,25 @@ body{
 
 .form{
   display: grid;
+  padding: 15px;
+  background-color: #E6E8E6;
+  font-style: italic;
+  border-style: solid;
+  border-color: darkorchid;
+}
+.formII{
+  display: grid;
   align-content: center;
   padding: 15px;
   background-color: #E6E8E6;
   font-style: italic;
   border-style: solid;
+  max-width: 400px;
+  border-color: darkcyan;
+}
+.sign{
+  display: grid;
+  justify-content: center;
 }
 
 .profile{

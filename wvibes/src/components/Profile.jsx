@@ -16,8 +16,8 @@ export default function AllPosts() {
     return (
 
         <div>
-            <h3> Bio: If you contribute to this webisite add you name and leave your mark on ZaWave</h3>
-            
+           <a href = {'/sign'}> <h3> Bio: If you contribute to this webisite add you name and leave your mark on ZaWave</h3> </a>
+
              <div className = 'profile'>
                  {posts.map ((post, index) => {
                     

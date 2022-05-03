@@ -32,6 +32,15 @@ export default function Post() {
         nav('/')
     }
 
+    const com = () => {
+        const li= document.createElement('li');//
+        const inp = document.querySelector('.new'); //the current input field
+        li.textContent = inp.value //setting th eli to the value of the input AT THAT MOMENT
+        document.querySelector('ul').appendChild(li);
+        inp.value = null
+        nav('/:id')
+    }
+
     return (
 
         <div>
@@ -50,12 +59,18 @@ export default function Post() {
             <button onClick={dislike}> ❌ </button>
 
             <div> Comment Section <br/>
+
+            <ul>
+                <li>first</li>
+            </ul>
+
+
             <form className = 'form'>
 
-            Type here ⤵️ <input type = 'text'/> <br/>
+            Type here ⤵️ <input className = 'new' type = 'text'/> <br/>
             </form>
 
-           <button > Add a Comment </button>
+           <button onClick={com} > Add a Comment </button>
            
            </div>
 

@@ -6,18 +6,18 @@ const URL = 'http://localhost:3003/wavez/'
 const TrendzUrl = 'https://api.giphy.com/v1/gifs/trending?api_key=gJPnCRbyzlymPwgMOfgUm8bBMTDXZSqJ&limit=5'
 const RandoUrl = `https://api.giphy.com/v1/gifs/random?api_key=gJPnCRbyzlymPwgMOfgUm8bBMTDXZSqJ`
 
-//Rick and Morty api 
-const Rick = 'https://zoo-animal-api.herokuapp.com/animals/rand/10'
-// 'https://rickandmortyapi.com/api/character/'
+//Animals and Morty api 
+const Animals = 'https://zoo-animal-api.herokuapp.com/animals/rand/10'
+
 
 //pokemon api
 const Pokemon = 'https://pokeapi.co/api/v2/pokemon/'
 
 
 
-export const getRick = () => {
+export const getAnimals = () => {
 
-    const response = axios.get(Rick)
+    const response = axios.get(Animals)
     return response
 
 }
@@ -50,6 +50,12 @@ export const uploadPost = (add) => {
     const response = axios.post(URL, add)
     return response 
 }
+export const uploadName = (add) => {
+
+    const response = axios.post(add)
+    return response 
+}
+
 
 export const editPost = (id, updatedPost) => {
 

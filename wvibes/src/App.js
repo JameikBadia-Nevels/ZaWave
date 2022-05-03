@@ -7,6 +7,7 @@ import Post from './components/Post'
 import Edit from './components/Edit'
 import Trendz from './components/Trendy'
 import Profile from './components/Profile'
+import Sign from './components/Signing'
 
 
 
@@ -44,6 +45,7 @@ function App() {
               <Route path = "/profile" element = {<Profile/>}/>
               <Route path = "/create" element = {<Create/>}/>
               <Route path = "/:id/edit" element = {<Edit/>}/>
+              <Route path = '/sign' element = {<Sign/>}/>
             </Routes>
         </Router>
     </div>

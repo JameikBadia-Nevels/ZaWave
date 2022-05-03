@@ -1,0 +1,45 @@
+body{
+  background-color: E6E8E6; 
+  color:royalblue;
+  text-align: center; 
+}
+
+.post{
+  align-items: center;
+  border-color:orange;
+  border-style: groove;
+  max-width: 600px;
+}
+
+.vibes{
+  display: grid;
+  justify-content:center
+}
+
+.pfp{
+  border-style: double;
+  border-color: palegreen;
+  border-radius: 4em;
+  width: 30px;
+  height: 30px;
+}
+
+.form{
+  display: grid;
+  align-content: center;
+  padding: 15px;
+  background-color: #E6E8E6;
+  font-style: italic;
+  border-style: solid;
+}
+
+.profile{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.home{
+  display: grid;
+  justify-content:center
+}
